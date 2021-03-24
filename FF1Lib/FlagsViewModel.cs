@@ -4073,5 +4073,16 @@ namespace FF1Lib
 				RaisePropertyChanged();
 			}
 		}
+
+		public SpoilerBatHints SkyWarriorSpoilerBats
+		{
+		    get => Flags.SkyWarriorSpoilerBats;
+		    set
+		    {
+			Flags.SkyWarriorSpoilerBats = value;
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SkyWarriorSpoilerBats"));
+		    }
+		}
+
 	}
 }

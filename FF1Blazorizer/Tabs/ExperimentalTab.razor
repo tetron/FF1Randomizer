@@ -29,6 +29,7 @@
 			<EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="startingLevelDropDown" TItem="StartingLevel" @bind-Value="Flags.StartingLevel">Starting Level:</EnumDropDown>
 			<CheckBox UpdateToolTip="@UpdateToolTipID" Id="nonesGainXPcheckBox" @bind-Value="Flags.NonesGainXP">Nones Gain XP</CheckBox>
 			<CheckBox UpdateToolTip="@UpdateToolTipID" Id="thiefAgilityBuffCheckBox" @bind-Value="Flags.ThiefAgilityBuff">Thief Agility Buff</CheckBox>
+			<div class="checkbox-cell"></div>
 			<h4>Bugfixes</h4>
 			<CheckBox UpdateToolTip="@UpdateToolTipID" Id="fix3DigitStatsCheckBox" @bind-Value="Flags.BugfixRender3DigitStats">Correctly render character stats over 99</CheckBox>
 			<div class="checkbox-cell"></div>
@@ -94,6 +95,10 @@
 			</div>
 			<div class="checkbox-cell"></div>
 			<h4>Extensive Hints</h4>
+			<div class="row">
+                                <EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="spoilerBatsDropDown" TItem="SpoilerBatHints" @bind-Value="Flags.SkyWarriorSpoilerBats">ToF Spoiler bats:</EnumDropDown>
+			</div>
+
 			<CheckBox UpdateToolTip="@UpdateToolTipID" Id="extendedHintsCheckBox" @bind-Value="Flags.ExtensiveHints_Enable">Enable Extensive Hints</CheckBox>
 			<div class="row">
 				<div class="col-lg-3 tighter noleftpadding">Loose on Floor:</div>
